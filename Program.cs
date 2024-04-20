@@ -1,29 +1,43 @@
+using AppAgendaContactosApi.Repositories;
 using DB;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Agregar servicios
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AgendaContactosContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+//configuración del repo
+builder.Services.AddScoped<IContactoRepository, ContactoRepository>();
+
+// Configuración de CORS
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAllOrigins",
+//        builder =>
+//        {
+//            builder
+//            .AllowAnyOrigin()
+//            .AllowAnyMethod()
+//            .AllowAnyHeader();
+//        });
+//});
+
 var app = builder.Build();
 
 // Comentar o descomentar una vez se haya creado la base de datos
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<AgendaContactosContext>();
+    context.Database.EnsureCreated();
+}
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var services = scope.ServiceProvider;
-//    var context = services.GetRequiredService<AgendaContactosContext>();
-//    context.Database.EnsureCreated();
-//}
-
-// Configure the HTTP request pipeline.
+// Configuracion de HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -31,6 +45,15 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+//app.UseCors("AllowAllOrigins");
+app.UseCors(c =>
+{
+    c.AllowAnyHeader()
+    .AllowAnyOrigin()
+    .AllowAnyMethod();
+});
+
 
 app.UseAuthorization();
 
