@@ -5,7 +5,7 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAgendaContactosApi", "AppAgendaContactosApi.csproj", "{A76BE0CC-9338-4F65-882F-0A82EDC591A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB", "..\DB\DB.csproj", "{35262297-1CE8-4E68-82BC-5168579E6972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB", ".\DB\DB.csproj", "{35262297-1CE8-4E68-82BC-5168579E6972}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
