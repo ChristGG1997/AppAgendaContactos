@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppAgendaContactosApi", "AppAgendaContactosApi.csproj", "{A76BE0CC-9338-4F65-882F-0A82EDC591A7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB", ".\DB\DB.csproj", "{35262297-1CE8-4E68-82BC-5168579E6972}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB", "DB\DB.csproj", "{35262297-1CE8-4E68-82BC-5168579E6972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppAgendaContactosApi.Test", "AppAgendaContactosApi.Test\AppAgendaContactosApi.Test.csproj", "{C2F465D6-B460-4E5B-9ADF-1B6607E25AD4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{35262297-1CE8-4E68-82BC-5168579E6972}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35262297-1CE8-4E68-82BC-5168579E6972}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35262297-1CE8-4E68-82BC-5168579E6972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F465D6-B460-4E5B-9ADF-1B6607E25AD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F465D6-B460-4E5B-9ADF-1B6607E25AD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F465D6-B460-4E5B-9ADF-1B6607E25AD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F465D6-B460-4E5B-9ADF-1B6607E25AD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

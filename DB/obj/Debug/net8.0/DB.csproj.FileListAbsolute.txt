@@ -1,0 +1,13 @@
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\bin\Debug\net8.0\DB.deps.json
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\bin\Debug\net8.0\DB.runtimeconfig.json
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\bin\Debug\net8.0\DB.dll
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\bin\Debug\net8.0\DB.pdb
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.csproj.AssemblyReference.cache
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.csproj.CoreCompileInputs.cache
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.sourcelink.json
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.dll
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\refint\DB.dll
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.pdb
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\DB.genruntimeconfig.cache
+C:\Dev\Local\.net Core\AppAgendaContactos\DB\obj\Debug\net8.0\ref\DB.dll

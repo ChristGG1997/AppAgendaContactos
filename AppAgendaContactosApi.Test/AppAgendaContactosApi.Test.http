@@ -1,0 +1,6 @@
+@AppAgendaContactosApi.Test_HostAddress = http://localhost:5190
+
+GET {{AppAgendaContactosApi.Test_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

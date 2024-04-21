@@ -16,6 +16,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DB\DB.csproj" />
+    <ProjectReference Include="AppAgendaContactosApi.Test\AppAgendaContactosApi.Test.csproj" />
+    <ProjectReference Include="DB\DB.csproj" />
   </ItemGroup>
 
 </Project>
